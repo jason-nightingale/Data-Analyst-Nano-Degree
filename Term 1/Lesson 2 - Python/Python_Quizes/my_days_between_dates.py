@@ -1,12 +1,7 @@
 ###
-### Define a simple nextDay procedure, that assumes
-### every month has 30 days.
-###
-### For example:
-###    nextDay(1999, 12, 30) => (2000, 1, 1)
-###    nextDay(2013, 1, 30) => (2013, 2, 1)
-###    nextDay(2012, 12, 30) => (2013, 1, 1)  (even though December really has 31 days)
-###
+### Use Dave's suggestions to finish your daysBetweenDates
+# procedure. It will need to take into account leap years
+# in addition to the correct number of days in each month.
 days_in_month = [31,28,31,30,31,30,31,31,30,31,30,31]
 
 def nextDay(year, month, day):
