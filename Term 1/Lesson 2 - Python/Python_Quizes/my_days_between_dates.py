@@ -39,6 +39,7 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
 
     # YOUR CODE HERE!
     days_between_count = 0
+    #check for leap year
     while (year1,month1,day1) < (year2,month2,day2):
         if year1 % 400 == 0:
             days_in_month[1] = 29
@@ -48,7 +49,7 @@ def daysBetweenDates(year1, month1, day1, year2, month2, day2):
             days_in_month[1] = 29
         else:
             days_in_month[1] = 28
-
+        #send to nextDay function
         year1, month1, day1 = nextDay(year1,month1,day1)
         days_between_count += 1
     return days_between_count
